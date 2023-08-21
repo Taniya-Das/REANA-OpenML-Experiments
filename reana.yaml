@@ -1,0 +1,18 @@
+version: 0.3.0
+inputs:
+  files:
+    - code/reproduce_experiment.py
+  parameters:
+    helloworld: code/reproduce_experiment.py
+    outputfile: results/output.txt
+workflow:
+  type: serial
+  specification:
+    steps:
+      - environment: 'openml/openml-python:develop'
+        commands:
+          - python "${reproduce_experiment}"
+              --outputfile "${outputfile}"
+outputs:
+  files:
+   - results/reproduce_experiment.txt
