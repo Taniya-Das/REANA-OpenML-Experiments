@@ -15,4 +15,4 @@ workflow:
               --outputfile "${outputfile}"
 outputs:
   files:
-   - results/reproduce_experiment.txt
+   - results/output.txt
