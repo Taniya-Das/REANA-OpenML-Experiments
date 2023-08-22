@@ -1,0 +1,14 @@
+version: 0.3.0
+inputs:
+  files:
+    - code/reproduce_experiment.py
+  directories:
+    - workflow/cwl
+  parameters:
+    input: workflow/cwl/reproduce_experiment-job.yml
+workflow:
+  type: cwl
+  file: workflow/cwl/reproduce_experiment.cwl
+outputs:
+  files:
+   - outputs/output.txt
