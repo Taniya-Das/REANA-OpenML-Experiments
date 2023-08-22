@@ -9,7 +9,7 @@ workflow:
   type: serial
   specification:
     steps:
-      - environment: 'openml/openml-python:develop'
+      - environment: 'docker.io/openml/openml-python:develop'
         commands:
           - python "${reproduce_experiment}"
               --outputfile "${outputfile}"
