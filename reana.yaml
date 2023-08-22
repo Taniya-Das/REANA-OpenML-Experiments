@@ -11,8 +11,7 @@ workflow:
     steps:
       - environment: 'openml/openml-python:develop'
         commands:
-          - python "${reproduce_experiment}" --outputfile \"${outputfile}\"
-              --outputfile "${outputfile}"
+          - python "${reproduce_experiment}" --outputfile "${outputfile}"
 outputs:
   files:
    - results/output.txt
