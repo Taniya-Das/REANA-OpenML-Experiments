@@ -1,3 +1,3 @@
 # Use the existing image as the base
-FROM openml/openml-python:develop
+FROM docker.io/openml/openml-python:develop
 
