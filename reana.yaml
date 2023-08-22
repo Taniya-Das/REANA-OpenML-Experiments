@@ -3,7 +3,7 @@ inputs:
   files:
     - code/reproduce_experiment.py
   parameters:
-    helloworld: code/reproduce_experiment.py
+    reproduce_experiment: code/reproduce_experiment.py
     outputfile: results/output.txt
 workflow:
   type: serial
